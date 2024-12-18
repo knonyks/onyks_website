@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Pliki CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" 
+          crossorigin="anonymous"/>
+
+    <title>Onyx</title>
+    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/x-icon">
+
+    <!-- Skrypty -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  
+  <body>
+
+    {% include 'header.html' %}
+
+    <div class="hero">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {% for i in "123456789" %}
+          <div class="swiper-slide">
+            <img src="{% static 'images/gallery/main'|add:i|add:'.png' %}" alt="Zdjęcie {{ i }}" />
+          </div>
+          {% endfor %}
+        </div>
+
+        <!-- Nawigacja Swiper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <div class="overlay"></div>
+      <div class="text-layer">
+        <h1>Witamy na stronie KN ONYKS!</h1>
+        <p>Lutownica w dłoń! </br> <<< Dołącz do imperium pasjonatów elektroniki >>></p>
+      </div>
+    </div>
+
+    <section class="container content">
+      <h2>Czym jest ONYKS?</h2>
+      <p>
+        ONYKS to organizacja studencka działająca na Wydziale Elektroniki i Technik Informacyjnych Politechniki Warszawskiej. 
+        Koło Naukowe powstało w celu wspólnego realizowania projektów elektronicznych i wzajemnego wymieniania się wiedzą i doświadczeniami.
+        ONYKS to ludzie chcący dzielić się pasją do tworzenia urządzeń i rozwijania istniejących rozwiązań.
+        Nie teoria, a praktyka zrobią z Ciebie elektryka!
+      </p>
+
+      <h3>Dlaczego warto do nas dołączyć?</h3>
+      <ul class="content">
+        <li>Poznasz ludzi o podobnych zainteresowaniach</li>
+        <li>Uczestnicząc w projektach, zdobędziesz praktyczne doświadczenie</li>
+        <li>Otrzymasz pomoc w realizacji własnych projektów</li>
+        <li>Będziesz miał okazję uczestniczyć w hackathonach w zespole razem z nami</li>
+        <li>Zyskasz dostęp do profesjonalnego warsztatu i materiałów</li>
+      </ul>
+
+      <h3>Kogo potrzebujemy?</h3>
+      <p>Zachęcamy do dołączenia wszystkich pasjonatów elektroniki i technologii. W szczególności zależy nam na osobach zajmujących się:</p>
+      <ul class="content">
+        <li>Produkcją własnych PCB</li>
+        <li>Programowaniem FPGA i CPLD</li>
+        <li>Projektowaniem układów i PCB</li>
+        <li>Programowaniem mikrokontrolerów AVR, ARM i RISC-V</li>
+        <li>Modelowaniem w CAD 3D</li>
+      </ul>
+    </section>
+
+    {% include 'footer.html' %}
+
+    <!-- Ładowanie Swipera -->
+    <script src="{% static 'js/swiper.js' %}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas - KN ONYKS</title>
+    
+    <!-- Ładowanie stylów -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" 
+          crossorigin="anonymous">
+    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/png">
+
+    <!-- Ładowanie skryptów -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <!-- Nagłówek -->
+    {% include 'header.html' %}
+
+    <section class="about">
+        {% for member in members %}
+        <div class="card">
+            <div>
+                <img src="{% static member.image %}" alt="{{ member.name }}" class="avatar" />
+            </div>
+            <div class="user-info">
+                <h2>{{ member.name }}</h2>
+                <h3>{{ member.position }}</h3>
+                <p>{{ member.description }}</p>
+
+                <!-- Nagłówek i lista technologii -->
+                <h4>Specjalności</h4>
+                <div class="tech">
+                    {% for tech in member.specialties %}
+                        <span class="tech-item">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    {% if member.facebook %}
+                    <a href="{{ member.facebook }}" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                    {% endif %}
+                    {% if member.github %}
+                    <a href="{{ member.github }}" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    {% endif %}
+                    {% if member.linkedin %}
+                    <a href="{{ member.linkedin }}" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+    <!-- Stopka -->
+    {% include 'footer.html' %}
+
+    <!-- Skrypty -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
