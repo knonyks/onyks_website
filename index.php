@@ -47,7 +47,7 @@
     
       <!-- Warstwa tekstowa -->
       <div class="text-layer">
-        <h1>Witamy na stronie koła Onyx!</h1>
+        <h1>Witamy na stronie koła Onyks!</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores voluptas nisi dolore ducimus consequuntur?</p>
       </div>
     </div>

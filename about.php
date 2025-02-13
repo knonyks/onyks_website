@@ -26,7 +26,7 @@
         </div>
         <div class="user-info">
           <h2>Elektro Napaleniec</h2>
-          <h3>Elektronik</h3>
+          <h3>Twoja stara</h3>
           <p>Elektro Napaleniec to prawdziwy maniak prądu, który budzi się rano z woltami w głowie! 
             Jego podstawowy atrybut to przepalona lutownica i opaska z neonowym logo „220V” na czole. Nigdy nie idzie na kompromisy – jeśli coś nie działa, 
             to musi działać z iskrą! Jego misją jest naprawa wszystkiego, co przestaje działać, w swoim jedynym, szalonym stylu – trochę dymu, kilka błysków i... voilà!
