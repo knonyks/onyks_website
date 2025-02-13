@@ -24,16 +24,16 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images\gallery\image1.jpeg" alt="Zdjęcie 1" />
+            <img src="images\gallery\1735335298398.jpg" alt="Zdjęcie 1" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\image2.jpg" alt="Zdjęcie 2" />
+            <img src="images\gallery\1735335298434.png" alt="Zdjęcie 2" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\image3.jpg" alt="Zdjęcie 3" />
+            <img src="images\gallery\1735335298463.jpg" alt="Zdjęcie 3" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\image4.jpg" alt="Zdjęcie 3" />
+            <img src="images\gallery\1735335298487.jpg" alt="Zdjęcie 3" />
           </div>
         </div>
         <!-- Dodaj nawigację Swiper -->
