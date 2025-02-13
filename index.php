@@ -75,33 +75,14 @@
       </p>
       <h3>Kogo potrzebujemy</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-        voluptatum consequatur sed fugit quae odio natus inventore, voluptate
-        debitis accusamus! Earum excepturi itaque numquam ex repellendus
-        recusandae? Quod id cupiditate a quae nobis non quos, quas veniam unde
-        voluptas. Praesentium necessitatibus cum sit dolorum quia architecto
-        sequi deleniti, culpa iure reiciendis dolor voluptates iusto adipisci
-        voluptatum ut, atque est molestiae obcaecati possimus pariatur natus
-        unde sed. Aspernatur nesciunt hic quos necessitatibus amet, neque
-        repudiandae aliquid cumque dolore eveniet id! Cum vel delectus ex?
-        Impedit asperiores molestiae officia expedita modi dolor assumenda atque
-        cupiditate, repellendus harum fugiat laudantium provident. Dignissimos,
-        culpa!
-      </p>
-      <h3>TRZEY</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-        voluptatum consequatur sed fugit quae odio natus inventore, voluptate
-        debitis accusamus! Earum excepturi itaque numquam ex repellendus
-        recusandae? Quod id cupiditate a quae nobis non quos, quas veniam unde
-        voluptas. Praesentium necessitatibus cum sit dolorum quia architecto
-        sequi deleniti, culpa iure reiciendis dolor voluptates iusto adipisci
-        voluptatum ut, atque est molestiae obcaecati possimus pariatur natus
-        unde sed. Aspernatur nesciunt hic quos necessitatibus amet, neque
-        repudiandae aliquid cumque dolore eveniet id! Cum vel delectus ex?
-        Impedit asperiores molestiae officia expedita modi dolor assumenda atque
-        cupiditate, repellendus harum fugiat laudantium provident. Dignissimos,
-        culpa!
+        Zachęcamy do dołączenia wszystkich pasjonatów elektroniki i technologii. 
+        W szczegówlności zależy nam na osobach zajmujących się:
+        <ul class="content">
+          <li>Produkcją własnych PCB</li>
+          <li>Programowaniem FPGA i CPLD</li>
+          <li>Projektowaniem układów i PCB</li>
+          <li>Programowaniem mikrokontrolerów AVR, ARM i RISCV</li>
+          <li>Modelowaniem 3D w CAD</li>
       </p>
     </section>
     <?php include 'footer.php'; ?>

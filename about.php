@@ -25,15 +25,12 @@
           <img src="images\elektro_napaleniec.jpg" alt="Octocat" class="avatar" />
         </div>
         <div class="user-info">
-          <h2>Elektro Napaleniec</h2>
-          <h3>Twoja stara</h3>
-          <p>Elektro Napaleniec to prawdziwy maniak prądu, który budzi się rano z woltami w głowie! 
-            Jego podstawowy atrybut to przepalona lutownica i opaska z neonowym logo „220V” na czole. Nigdy nie idzie na kompromisy – jeśli coś nie działa, 
-            to musi działać z iskrą! Jego misją jest naprawa wszystkiego, co przestaje działać, w swoim jedynym, szalonym stylu – trochę dymu, kilka błysków i... voilà!
-             Jego warsztat jest pełen wszelkich możliwych narzędzi. Kto by nie chciał mieć takiego fachowca w pogotowiu?</p>
+          <h2>Mateusz Turycz</h2>
+          <h3>Prezes</h3>
+          <p>Jeden z odrodzicieli obecnej generacji koła</p>
           
           <!-- Nagłówek i lista technologii -->
-          <h4>Technologie</h4>
+          <h4>Specjalności</h4>
           <div class="tech">
             <span class="tech-item">Arduino</span>
           </div>
@@ -51,12 +48,14 @@
           <img src="https://cdn.pixabay.com/photo/2016/11/08/15/21/user-1808597_640.png" alt="Octocat" class="avatar" />
         </div>
         <div class="user-info">
-          <h2>User</h2>
-          <h3>Elektronik</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel deleniti, veniam beatae consequatur aut vitae consequuntur nostrum ex magni unde voluptatibus, sit earum cupiditate sed? Quas, illum quibusdam.</p>
+          <h2>Szymon Bartosik</h2>
+          <h3>Pierwszy sekretarz</h3>
+          <p> Zwolennik porządku i dokładności, wytrawny elektronik i mikrofalowiec. Nadaje organizacji profesjonalizmu. Włada rejestrami mikrokontrolerów i potężną matematyką.
+              Fan elektorniki analogowej i mikrokontrolerów AVR (za Ar***no wyrzuca z koła).
+          </p>
           
           <!-- Nagłówek i lista technologii -->
-          <h4>Technologie</h4>
+          <h4>Specjalności</h4>
           <div class="tech">
             <span class="tech-item">STM32</span>
             <span class="tech-item">Arduino</span>
@@ -80,12 +79,14 @@
           <img src="https://cdn.pixabay.com/photo/2016/11/08/15/21/user-1808597_640.png" alt="Octocat" class="avatar" />
         </div>
         <div class="user-info">
-          <h2>User</h2>
-          <h3>Programista</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel deleniti, veniam beatae consequatur aut vitae consequuntur nostrum ex magni unde voluptatibus, sit earum cupiditate sed? Quas, illum quibusdam.</p>
+          <h2>Janusz Stepanik</h2>
+          <h3>Finansjer</h3>
+          <p>Lorem Ipsum dolor sit amet. Ale wytrwale trzyma się na studiach i w zarządzie. Zawsze pomocny.
+            Znawca tranzystorów mocy.
+          </p>
           
           <!-- Nagłówek i lista technologii -->
-          <h4>Technologie</h4>
+          <h4>Specjalności</h4>
           <div class="tech">
             <span class="tech-item">STM32</span>
             <span class="tech-item">Arduino</span>
@@ -107,12 +108,14 @@
           <img src="https://cdn.pixabay.com/photo/2016/11/08/15/21/user-1808597_640.png" alt="Octocat" class="avatar" />
         </div>
         <div class="user-info">
-          <h2>User</h2>
-          <h3>Mechanik</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel deleniti, veniam beatae consequatur aut vitae consequuntur nostrum ex magni unde voluptatibus, sit earum cupiditate sed? Quas, illum quibusdam.</p>
+          <h2>Bartosz Mruk</h2>
+          <h3>Wicefinansjer</h3>
+          <p>Zawsze świadczy szybką pomoca przy kwestiach organizacyjnych. Doskonały dawca pomysłów na niekonwencjonalne rozwiązania techniczne.
+            Tak swoją drogą to używa Arch Linuxa.
+          </p>
           
           <!-- Nagłówek i lista technologii -->
-          <h4>Technologie</h4>
+          <h4>Specjalności</h4>
           <div class="tech">
             <span class="tech-item">CAD</span>
           </div>
@@ -131,12 +134,12 @@
           <img src="https://cdn.pixabay.com/photo/2016/11/08/15/21/user-1808597_640.png" alt="Octocat" class="avatar" />
         </div>
         <div class="user-info">
-          <h2>User</h2>
-          <h3>Technolog</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel deleniti, veniam beatae consequatur aut vitae consequuntur nostrum ex magni unde voluptatibus, sit earum cupiditate sed? Quas, illum quibusdam.</p>
+          <h2>Rafał Chojnacki</h2>
+          <h3>Administrator mediów</h3>
+          <p></p>
           
           <!-- Nagłówek i lista technologii -->
-          <h4>Technologie</h4>
+          <h4>Specjalności</h4>
           <div class="tech">
             <span class="tech-item">CAD</span>
           </div>
