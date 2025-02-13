@@ -47,47 +47,33 @@
     
       <!-- Warstwa tekstowa -->
       <div class="text-layer">
-        <h1>Witamy na stronie koła Onyks!</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores voluptas nisi dolore ducimus consequuntur?</p>
+        <h1>Witamy na stronie Koła Mikrosystemów ONYKS!</h1>
+        <p>Lutownica w dłoń! </br> Dołącz do imperium pasjonatów elektroniki</p>
       </div>
     </div>
     
     </div>
 
     <section class="container content">
-      <h2>Niewola poszukuje niewolnika !</h2>
+      <h2>Czym jest ONYKS?</h2>
       <p>
-        Szukamy kadydatów do koła!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-        voluptatum consequatur sed fugit quae odio natus inventore, voluptate
-        debitis accusamus! Earum excepturi itaque numquam ex repellendus
-        recusandae? Quod id cupiditate a quae nobis non quos, quas veniam unde
-        voluptas. Praesentium necessitatibus cum sit dolorum quia architecto
-        sequi deleniti, culpa iure reiciendis dolor voluptates iusto adipisci
-        voluptatum ut, atque est molestiae obcaecati possimus pariatur natus
-        unde sed. Aspernatur nesciunt hic quos necessitatibus amet, neque
-        repudiandae aliquid cumque dolore eveniet id! Cum vel delectus ex?
-        Impedit asperiores molestiae officia expedita modi dolor assumenda atque
-        cupiditate, repellendus harum fugiat laudantium provident. Dignissimos,
-        culpa!
+        ONYKS to organizacja studencka działająca na wydziale Elektroniki i Technik Informacyjnych Politechniki Warszawskiej. 
+        Powstał w celu wspólnego realizowania projektów elektronicznych i wzjamenego wymieniania się wiedzą i doświadczeniami.
+        ONYKS to ludzie chcący dzielić się pasją do tworzenia urządzeń i rozwijania istniejących rozwiązań.
+        Nie teoria a praktyka zrobią z ciebie elektryka!
       </p>
 
-      <h3>Content Two</h3>
+      <h3>Dlaczego warto do nas dołączyć?</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-        voluptatum consequatur sed fugit quae odio natus inventore, voluptate
-        debitis accusamus! Earum excepturi itaque numquam ex repellendus
-        recusandae? Quod id cupiditate a quae nobis non quos, quas veniam unde
-        voluptas. Praesentium necessitatibus cum sit dolorum quia architecto
-        sequi deleniti, culpa iure reiciendis dolor voluptates iusto adipisci
-        voluptatum ut, atque est molestiae obcaecati possimus pariatur natus
-        unde sed. Aspernatur nesciunt hic quos necessitatibus amet, neque
-        repudiandae aliquid cumque dolore eveniet id! Cum vel delectus ex?
-        Impedit asperiores molestiae officia expedita modi dolor assumenda atque
-        cupiditate, repellendus harum fugiat laudantium provident. Dignissimos,
-        culpa!
+        <ul class="content">
+          <li>Poznasz ludzi o podobnych zainteresowaniach</li>
+          <li>Uczestnicząc w projektahc zdobędziesz praktyczne doświadczenie</li>
+          <li>Otrzymasz pomoc w realizacji własnych projektów</li>
+          <li>Będziesz miał okazję uczestniczyć w hackathonach w zespole razem z nami</li>
+          <li>Zyskasz dostęp do profesjonalnego warsztatu i materiałów</li>
+        </ul>
       </p>
-      <h3>CZYwo</h3>
+      <h3>Kogo potrzebujemy</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
         voluptatum consequatur sed fugit quae odio natus inventore, voluptate

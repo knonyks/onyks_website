@@ -623,6 +623,14 @@ body {
   margin-bottom: 20px;
 }
 
+.content li  {
+  /* color: #555; */
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+
+
 .content h2::after,
 .content h3::after {
   content: "";
