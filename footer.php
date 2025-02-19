@@ -1,13 +1,18 @@
 <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 Koło Naukowe Mikrosystemów - Politechnika Warszawska. Wszystkie prawa zastrzeżone.</p>
-        <p>Kontakt: kontakt@kolo-mikrosystemow.pl | Tel: +48 123 456 789</p>
-        <p>Autor strony: Rafał Chojnacki</p>
+        <p>&copy; 2024 - 2025 Koło Naukowe Mikrosystemów - Politechnika Warszawska. Wszelkie prawa zastrzeżone.</p>
+       
+        <div class="personal-social-links">
+          <p>Autor strony: Rafał Chojnacki </p>
+            <a href="https://github.com/RafalCho02" target="_blank" aria-label="Gihub"><i class="fab fa-github"></i></a> 
+        </div>
+
+        <p>E-mail: kn.onyks@gmail.com</p>
         <div class="social-links">
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/knonyks" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/knonyks/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/knonyks" target="_blank" aria-label="Gihub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/company/knonyks/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </footer>

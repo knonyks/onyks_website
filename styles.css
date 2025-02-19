@@ -242,6 +242,27 @@ body {
   transform: scale(1.2); /* Powiększenie ikony przy najechaniu */
 }
 
+
+
+.footer .personal-social-links {
+  margin-top: 15px;
+}
+
+.footer .personal-social-links a {
+  display: flex;
+  margin: 0 10px;
+  color: #EEEEEE;
+  font-size: 16px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .personal-social-links a:hover {
+  color: #c0392b; /* Kolor zmienia się na czerwony przy najechaniu */
+  transform: scale(1.1); /* Powiększenie ikony przy najechaniu */
+}
+
+
+
 .hero {
   position: relative;
   height: 100vh;

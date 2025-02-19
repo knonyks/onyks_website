@@ -25,47 +25,27 @@
 
     <section class="projects">
       <div class="project" data-movie="project1">
-        <img src="images\gallery\image1.jpeg" alt="Zdjęcie projektu" />
+        <img src="images\projects\drukarka2.png" alt="Zdjęcie projektu" />
         <div class="overview">
-          <h3>Projekt</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae iure rerum unde, dolore id assumenda repudiandae quam cum labore quos sunt necessitatibus voluptate laborum sed harum enim voluptatem. Consectetur saepe tempore blanditiis hic fuga quos neque voluptatum eligendi suscipit distinctio. At reprehenderit nulla voluptates facilis a fuga modi ullam rerum, voluptatibus officiis distinctio eveniet autem reiciendis quo vel voluptatem eius laboriosam illo, nisi mollitia. Iste cumque illo alias minima explicabo..</p>
+          <h3>Drukarka 3D ONYKSON</h3>
+          <p>aaa</p>
         </div>
       </div>
       <div class="project" data-movie="project2">
-        <img src="images\gallery\image2.jpg" alt="Zdjęcie projektu" />
+        <img src="images\projects\drukarka.jpg" alt="Zdjęcie projektu" />
         <div class="overview">
-          <h3>Projekt</h3>
+          <h3>Monitoring pomieszczeń IoT</h3>
           <p>Opis Projekt  1.</p>
         </div>
       </div>
       <div class="project" data-movie="project3">
-        <img src="images\gallery\image3.jpg" alt="Zdjęcie projektu" />
+        <img src="images\projects\drukarka.jpg" alt="Zdjęcie projektu" />
         <div class="overview">
-          <h3>Projekt</h3>
+          <h3>Narzędzia z włókna węglowego</h3>
           <p>Opis Projekt  1.</p>
         </div>
       </div>
-      <div class="project" data-movie="project3">
-        <img src="images\gallery\image4.jpg" alt="Zdjęcie projektu" />
-        <div class="overview">
-          <h3>Projekt</h3>
-          <p>Opis Projekt  1.</p>
-        </div>
-      </div>
-      <div class="project" data-movie="project3">
-        <img src="images\gallery\image4.jpg" alt="Zdjęcie projektu" />
-        <div class="overview">
-          <h3>Projekt</h3>
-          <p>Opis Projekt  1.</p>
-        </div>
-      </div>
-      <div class="project" data-movie="project3">
-        <img src="images\gallery\image4.jpg" alt="Zdjęcie projektu" />
-        <div class="overview">
-          <h3>Projekt</h3>
-          <p>Opis Projekt  1.</p>
-        </div>
-      </div>
+
       <!-- Nakładka galerii -->
       <div id="galleryOverlay" class="gallery-overlay">
         <span id="closeGallery" class="close-gallery">&times;</span>

@@ -20,20 +20,29 @@
     <?php include 'header.php'; ?>
 
       <section class="join_us">
-        <h2>Dołącz do nas</h2>
+        <h2>Dołącz do nas!</h2>
         <p>
-            Szukamy kandydatów do koła! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-            voluptatum consequatur sed fugit quae odio natus inventore, voluptate
-            debitis accusamus! Earum excepturi itaque numquam ex repellendus
-            recusandae? Quod id cupiditate a quae nobis non quos, quas veniam unde
-            voluptas.
+            <b>Rekrutacja jest zawsze otwarta.</b> Wypełnij formularz i dołącz do naszej społeczności. Odezwiemy się w wolnej chwili (a w razie czego przypomnij się na przez FB).  
         </p>
         <div class="form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnqVc_UrfSkamCCtU2sYoSVYnNJnmql8gR32isEJhfzNupeQ/viewform?vc=0&c=0&w=1&flr=0"></iframe>
+            <iframe src="https://forms.gle/zbEb2xzthN7ZayYh8"></iframe>
         </div>
+
+        <h3>Jak wygląda rekrutacja?</h3>
+      <p>
+        <ul class="content">
+          <li>Umówimy się na spotkanie gdzie pokażemy nasz warsztat</li>
+          <li>Wybierzesz zadanie związane z obecnymi projektami</li>
+          <li>Zostaniesz zapisany jako oficjalny członek koła</li>
+          <li>Uzyskasz dostęp do naszego kanału Discord</li>
+          <li>Aktywnie (w miarę możliwości) uczestnicz przy swoim zadaniu</li>
+          <li>Na najbliższym zebraniu walnym otrzymasz wejściówkę do pokoju koła</li>
+          <li>Dalej sam(a) decydujesz</li>
+        </ul>
+      </p>
     </section>
+
     <?php include 'footer.php'; ?>
-    
     
     <script src="script.js"></script>
   </body>

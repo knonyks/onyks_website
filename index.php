@@ -27,13 +27,19 @@
             <img src="images\gallery\1735335298398.jpg" alt="Zdjęcie 1" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\1735335298434.png" alt="Zdjęcie 2" />
+            <img src="images\gallery\IMG_20241207_140841.jpg" alt="Zdjęcie 2" />
           </div>
           <div class="swiper-slide">
             <img src="images\gallery\1735335298463.jpg" alt="Zdjęcie 3" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\1735335298487.jpg" alt="Zdjęcie 3" />
+            <img src="images\gallery\1735335298487.jpg" alt="Zdjęcie 4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images\gallery\462557519_2492981804229890_4379326778538732516_n.jpg" alt="Zdjęcie 5" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images\gallery\IMG_20241004_211342.jpg" alt="Zdjęcie 6" />
           </div>
         </div>
         <!-- Dodaj nawigację Swiper -->
@@ -58,22 +64,22 @@
       <h2>Czym jest ONYKS?</h2>
       <p>
         ONYKS to organizacja studencka działająca na wydziale Elektroniki i Technik Informacyjnych Politechniki Warszawskiej. 
-        Powstał w celu wspólnego realizowania projektów elektronicznych i wzjamenego wymieniania się wiedzą i doświadczeniami.
+        Koło Naukowe powstało  w celu wspólnego realizowania projektów elektronicznych i wzjamenego wymieniania się wiedzą i doświadczeniami.
         ONYKS to ludzie chcący dzielić się pasją do tworzenia urządzeń i rozwijania istniejących rozwiązań.
-        Nie teoria a praktyka zrobią z ciebie elektryka!
+        Nie teoria a praktyka zrobią z Ciebie elektryka!
       </p>
 
       <h3>Dlaczego warto do nas dołączyć?</h3>
       <p>
         <ul class="content">
           <li>Poznasz ludzi o podobnych zainteresowaniach</li>
-          <li>Uczestnicząc w projektahc zdobędziesz praktyczne doświadczenie</li>
+          <li>Uczestnicząc w projektach zdobędziesz praktyczne doświadczenie</li>
           <li>Otrzymasz pomoc w realizacji własnych projektów</li>
           <li>Będziesz miał okazję uczestniczyć w hackathonach w zespole razem z nami</li>
           <li>Zyskasz dostęp do profesjonalnego warsztatu i materiałów</li>
         </ul>
       </p>
-      <h3>Kogo potrzebujemy</h3>
+      <h3>Kogo potrzebujemy?</h3>
       <p>
         Zachęcamy do dołączenia wszystkich pasjonatów elektroniki i technologii. 
         W szczegówlności zależy nam na osobach zajmujących się:
@@ -81,8 +87,8 @@
           <li>Produkcją własnych PCB</li>
           <li>Programowaniem FPGA i CPLD</li>
           <li>Projektowaniem układów i PCB</li>
-          <li>Programowaniem mikrokontrolerów AVR, ARM i RISCV</li>
-          <li>Modelowaniem 3D w CAD</li>
+          <li>Programowaniem mikrokontrolerów AVR, ARM i RISC-V</li>
+          <li>Modelowaniem w CAD 3D</li>
       </p>
     </section>
     <?php include 'footer.php'; ?>

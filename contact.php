@@ -25,10 +25,10 @@
           <!-- Informacje kontaktowe -->
           <div class="contact-details-box">
               <h3>Nasza siedziba</h3>
-              <p><i class="fas fa-building"></i> <strong>Koło Naukowe Mikrosystemów</strong></p>
+              <p><i class="fas fa-building"></i> <strong>WEiTI|Piętro III|Skrzydło A|Pokój 367-3</strong></p>
               <p><i class="fas fa-map-marker-alt"></i> <strong>Adres:</strong> ul. Nowowiejska 15, 00-665 Warszawa, Polska</p>
-              <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:kontakt@kolo-mikrosystemow.pl">kontakt@kolo-mikrosystemow.pl</a></p>
-              <p><i class="fas fa-phone"></i> <strong>Numer telefonu:</strong> +48 123 456 789</p>
+              <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:kn.onyks@gmail.com">kn.onyks@gmail.com</a></p>
+              <!--<p><i class="fas fa-phone"></i> <strong>Numer telefonu:</strong> +48 123 456 789</p>-->
           </div>
           
           <!-- Formularz kontaktowy -->
