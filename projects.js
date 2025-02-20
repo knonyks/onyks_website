@@ -9,18 +9,20 @@ $(document).ready(function () {
     
     const galleries = {
         "project1": [
-            "images/gallery/image1.jpeg",
-            "images/gallery/image2.jpg",
-            "images/gallery/image3.jpg"
+            "images/projects/drukarka_3d_onykson/drukarka1.png",
+            "images/projects/drukarka_3d_onykson/drukarka2.png",
+            "images/projects/drukarka_3d_onykson/drukarka3.png",
+            "images/projects/drukarka_3d_onykson/drukarka4.png"
         ],
         "project2": [
-            "images/gallery/image4.jpg",
-            "images/gallery/image1.jpeg",
-            "images/gallery/image2.jpg"
+            "images/projects/monitoring_iot/iot1.png",
+            "images/projects/monitoring_iot/iot2.png",
+            "images/projects/monitoring_iot/iot3.png"
         ],
         "project3": [
-            "images/gallery/image3.jpg",
-            "images/gallery/image4.jpg"
+            "images/projects/narzedzia_karbon/karbon1.png",
+            "images/projects/narzedzia_karbon/karbon2.png",
+            "images/projects/narzedzia_karbon/karbon3.png"
         ]
     };
 

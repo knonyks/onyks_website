@@ -24,22 +24,31 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images\gallery\1735335298398.jpg" alt="Zdjęcie 1" />
+            <img src="images\gallery\main1.png" alt="Zdjęcie 1" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\IMG_20241207_140841.jpg" alt="Zdjęcie 2" />
+            <img src="images\gallery\main2.png" alt="Zdjęcie 2" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\1735335298463.jpg" alt="Zdjęcie 3" />
+            <img src="images\gallery\main3.png" alt="Zdjęcie 3" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\1735335298487.jpg" alt="Zdjęcie 4" />
+            <img src="images\gallery\main4.png" alt="Zdjęcie 4" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\462557519_2492981804229890_4379326778538732516_n.jpg" alt="Zdjęcie 5" />
+            <img src="images\gallery\main5.png" alt="Zdjęcie 5" />
           </div>
           <div class="swiper-slide">
-            <img src="images\gallery\IMG_20241004_211342.jpg" alt="Zdjęcie 6" />
+            <img src="images\gallery\main6.png" alt="Zdjęcie 6" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images\gallery\main7.png" alt="Zdjęcie 7" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images\gallery\main8.png" alt="Zdjęcie 8" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images\gallery\main9.png" alt="Zdjęcie 9" />
           </div>
         </div>
         <!-- Dodaj nawigację Swiper -->
@@ -53,7 +62,7 @@
     
       <!-- Warstwa tekstowa -->
       <div class="text-layer">
-        <h1>Witamy na stronie Koła Mikrosystemów ONYKS!</h1>
+        <h1>Witamy na stronie KN ONYKS!</h1>
         <p>Lutownica w dłoń! </br> Dołącz do imperium pasjonatów elektroniki</p>
       </div>
     </div>

@@ -53,7 +53,7 @@
         </div>
         <div class="user-info">
           <h2>Szymon Bartosik</h2>
-          <h3>Pierwszy sekretarz</h3>
+          <h3>Sekretarz</h3>
           <p> Zwolennik porządku i dokładności, wytrawny elektronik i mikrofalowiec. Nadaje organizacji profesjonalizmu. Włada rejestrami mikrokontrolerów i potężną matematyką.
               Fan elektorniki analogowej i mikrokontrolerów AVR (za Ar***no wyrzuca z koła).
           </p>
@@ -82,7 +82,7 @@
         </div>
         <div class="user-info">
           <h2>Janusz Stepanik</h2>
-          <h3>Finansjer</h3>
+          <h3>Skarbnik</h3>
           <p>Weteran WEiTI. Doskonały przewdonik dla nowych człownków.
             Znawca tranzystorów mocy i strażnik lodówki. Specjalista od prania pieniędzy i biurokracji.
           </p>
@@ -109,7 +109,7 @@
         </div>
         <div class="user-info">
           <h2>Bartosz Mruk</h2>
-          <h3>Wicefinansjer</h3>
+          <h3>Zastępca skarbnika</h3>
           <p>Murarz, tynkarz, akrobata. Zawsze świadczy szybką pomocą przy kwestiach organizacyjnych. Doskonały dawca pomysłów na niekonwencjonalne rozwiązania techniczne. Zdał Metody Numeryczne za pierwszym razem.
             Tak swoją drogą to używa Arch Linuxa.
           </p>
@@ -142,6 +142,7 @@
           <h4>Specjalności</h4>
           <div class="tech">
             <span class="tech-item">Python</span>
+            <span class="tech-item">JavaScript</span>
             <span class="tech-item">WWW</span>
           </div>
           

@@ -4,7 +4,7 @@
     <nav class="nav">
       <div class="container">
         <img class="logo" src="images/logo.png" alt="Logo">
-        <h1 class="wut-info">Koło Naukowe Mikrosystemów <br><p>Politechnika Warszawska</p></h1>
+        <h1 class="wut-info">Koło Naukowe Mikrosystemów ONYKS<br><p>Politechnika Warszawska</p></h1>
         <div class="menu-icon" id="menu-icon">
           <i class="fas fa-bars"></i>
         </div>
