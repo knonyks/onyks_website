@@ -63,7 +63,7 @@
       <!-- Warstwa tekstowa -->
       <div class="text-layer">
         <h1>Witamy na stronie KN ONYKS!</h1>
-        <p>Lutownica w dłoń! </br> Dołącz do imperium pasjonatów elektroniki</p>
+        <p>Lutownica w dłoń! </br> <<< Dołącz do imperium pasjonatów elektroniki >>></p>
       </div>
     </div>
     

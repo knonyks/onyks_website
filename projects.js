@@ -17,7 +17,8 @@ $(document).ready(function () {
         "project2": [
             "images/projects/monitoring_iot/iot1.png",
             "images/projects/monitoring_iot/iot2.png",
-            "images/projects/monitoring_iot/iot3.png"
+            "images/projects/monitoring_iot/iot3.png",
+            "images/projects/monitoring_iot/iot4.png"
         ],
         "project3": [
             "images/projects/narzedzia_karbon/karbon1.png",

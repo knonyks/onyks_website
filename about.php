@@ -64,7 +64,7 @@
             <span class="tech-item">C</span>
             <span class="tech-item">AVR</span>
             <span class="tech-item">RF</span>
-            <span class="tech-item">CAD 3D</span>
+            <span class="tech-item">SolidEdge</span>
           </div>
           
 
