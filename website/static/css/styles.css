@@ -1,0 +1,859 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin-left: 75px;
+}
+
+section{
+  margin-bottom: 50px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #EEEEEE;
+  background-color: #121213;
+}
+.logo{
+  width: 200px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #EEEEEE;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #c0392b;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.projects{
+  box-sizing: border-box;
+  margin-top: 150px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.project {
+  width: 500px;
+  height: 600px; /* Ustawienie stałej wysokości, aby karta miała określony rozmiar */
+  margin: 1rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Obrazek wypełni kartę, zachowując proporcje */
+  display: block;
+  cursor: pointer;
+}
+
+.overview {
+  background-color: #ffffffe5;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.project:hover .overview {
+  transform: translateY(0);
+}
+
+.overview h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.overview p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.5;
+  justify-content: left;
+  text-align: justify;
+}
+
+.gallery-overlay {
+  display: none; /* Ukryj na starcie */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-content {
+  width: 80%;
+  max-width: 800px;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain; /* Zapewnia, że obraz zachowuje proporcje */
+}
+
+.close-gallery {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #fff;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+
+
+.nav a:hover::before,
+.nav a.current::before {
+  width: 100%;
+}
+
+.nav.active {
+  background-color: #222831;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #222; /* Wyróżniające tło */
+  color: #EEEEEE;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer .social-links {
+  margin-top: 15px;
+}
+
+
+
+.footer .social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #EEEEEE;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #c0392b; /* Kolor zmienia się na czerwony przy najechaniu */
+  transform: scale(1.2); /* Powiększenie ikony przy najechaniu */
+}
+
+
+
+.footer .personal-social-links {
+  margin-top: 15px;
+}
+
+.footer .personal-social-links a {
+  display: flex;
+  margin: 0 10px;
+  color: #EEEEEE;
+  font-size: 16px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .personal-social-links a:hover {
+  color: #c0392b; /* Kolor zmienia się na czerwony przy najechaniu */
+  transform: scale(1.1); /* Powiększenie ikony przy najechaniu */
+}
+
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Przyciemnienie */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Warstwa tekstowa */
+.hero .text-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero .text-layer h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+  animation: fadeInDown 1s ease-out both;
+}
+
+.hero .text-layer p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  animation: fadeInUp 1s ease-out both;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 180px;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Animacja przesunięcia dla kart */
+.card {
+    background-color: #161b22;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    margin-bottom: 30px; 
+  }
+  
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 10px solid #0d1117;
+  height: 200px;
+  width: 200px;
+}
+
+/* Główne style kontenera kontaktowego */
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6px;
+  margin-bottom: 20px;
+}
+
+/* Style dla sekcji z danymi kontaktowymi i formularzem kontaktowym */
+.contact-details-box,
+.contact-form-box {
+  flex: 1;
+  background-color: #161b22;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.1);
+  color: #c9d1d9;
+  font-size: 1.3rem;
+}
+
+/* Style dla nagłówków "Nasza siedziba" i "Skontaktuj się z nami" */
+.contact-details-box h3,
+.contact-form-box h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  position: relative;
+}
+
+/* Dekoracyjna linia pod nagłówkami */
+.contact-details-box h3::after,
+.contact-form-box h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #c0392b;
+  margin-top: 10px;
+  position: relative;
+}
+
+/* Style dla ikon w nagłówkach */
+.contact-details-box h3 i,
+.contact-form-box h3 i {
+  margin-right: 10px;
+  color: #c0392b;
+}
+
+/* Style dla paragrafów w sekcji z danymi kontaktowymi */
+.contact-details-box p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* Style dla linków w sekcji z danymi kontaktowymi */
+.contact-details-box a {
+  color: #c0392b;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Style grupy formularza kontaktowego */
+.contact-form .form-group {
+  margin-bottom: 25px;
+}
+
+/* Style dla etykiet formularza kontaktowego */
+.contact-form label {
+  display: block;
+  color: #c9d1d9;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Ikony w etykietach formularza */
+.contact-form label i {
+  margin-right: 10px;
+}
+
+/* Style dla pól wejściowych formularza kontaktowego */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.2rem;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background-color: #222831;
+  color: #c9d1d9;
+}
+
+/* Style dla tekstu zastępczego (placeholder) */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #8b949e;
+  font-size: 1.1rem;
+}
+
+/* Style dla przycisku formularza kontaktowego */
+.contact-form button {
+  width: 100%;
+  padding: 18px;
+  background-color: #c0392b;
+  color: #EEEEEE;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efekt hover dla przycisku */
+.contact-form button:hover {
+  background-color: #a93226;
+}
+
+/* Mapa Google pełna szerokość */
+.map-container {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #393E46;
+}
+
+/* Ustawienie wysokości mapy */
+.map-container iframe {
+  height: 600px;
+}
+
+
+.user-info {
+  color: #c9d1d9;
+  margin-left: 1.5rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.user-info h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #8b949e;
+  margin: 5px 0 15px;
+}
+
+.user-info p {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 10px 0 20px;
+}
+
+.user-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Stylizacja dla technologii */
+.tech {
+  margin-top: 10px;
+}
+
+.tech-item {
+  display: inline-block;
+  color: #c9d1d9;
+  background-color: #30363d;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tech-item:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Stylizacja dla linków do social mediów */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-link {
+  color: #c9d1d9;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Animacje */
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.card {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.show-left {
+  opacity: 1;
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.card.show-right {
+  opacity: 1;
+  animation: slideInRight 0.8s ease forwards;
+}
+
+
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .content{
+  margin-bottom: 20px;
+} */
+
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+  /* color: #393E46; */
+}
+
+
+.content p {
+  /* color: #555; */
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+
+.content li  {
+  /* color: #555; */
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+
+
+.content h2::after,
+.content h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #c0392b;
+  margin-top: 10px;
+}
+
+
+/* Styl ikony hamburgera */
+.menu-icon {
+  display: none; /* Domyślnie ukryta na dużych ekranach */
+  font-size: 24px;
+  margin-right: 30px;
+  cursor: pointer;
+  color: #EEEEEE;
+}
+
+/* Styl menu przy szerokościach ekranu poniżej 800px */
+@media only screen and (max-width: 1230px) {
+  .nav .container {
+    justify-content: space-between;
+  }
+
+  .nav ul.nav-links {
+    display: none; /* Ukryj listę nawigacyjną */
+    position: absolute;
+    top: 140px;
+    right: 0;
+    background-color: #222831;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  .nav ul.nav-links li {
+    padding: 15px 0;
+    border-bottom: 1px solid #393e46;
+  }
+
+  .nav ul.nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-icon {
+    display: block; /* Wyświetl ikonę hamburgera */
+  }
+
+  .nav-links.show {
+    display: flex !important; /* Wymuś wyświetlanie po kliknięciu */
+  }
+}
+
+
+@media only screen and (max-width: 540px) {
+  .wut-info{
+    max-width: 200px;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .logo{
+    width: 100px;
+  }
+  .nav ul.nav-links {
+    top: 90px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .nav ul.nav-links {
+    top: 95px;
+  }
+}
+
+@media only screen and (max-width: 946px) {
+  .contact-wrapper{
+    display: grid;
+  }
+  .contact-details-box h3{
+    font-size: 1.5rem;
+  }
+  .contact-form-box h3{
+    font-size: 1.5rem;
+  }
+}
+.live {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.live h1 {
+  font-size: 150px; /* Możesz dostosować między 100px a 200px */
+  color: #EEEEEE; /* Kolor pasujący do reszty strony */
+  font-weight: bold;
+  margin: 0;
+}
+
+@media only screen and (max-width: 946px) {
+  .live h1{
+  font-size: 100px;
+}
+}
+
+/* Stylizacja sekcji Join Us */
+.join_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #161b22;
+  color: #EEEEEE;
+  border-radius: 10px;
+  margin-top: 130px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.join_us h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.join_us h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #c0392b;
+  margin: 10px auto 0;
+}
+
+.join_us h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px 0 20px;
+  position: relative;
+}
+
+.join_us h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #c0392b;
+  margin: 10px auto 0;
+}
+
+.join_us p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px 0 40px;
+}
+
+/* Stylizacja kontenera formularza */
+.join_us .form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylizacja iFrame dla formularza */
+.join_us .form-container iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .join_us h2 {
+      font-size: 2rem;
+  }
+  .join_us p {
+      font-size: 1rem;
+  }
+  .join_us .form-container iframe {
+      height: 600px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .join_us {
+    margin-top: 80px;
+  }
+}
+
