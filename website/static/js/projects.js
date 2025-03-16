@@ -9,21 +9,21 @@ $(document).ready(function () {
     
     const galleries = {
         "project1": [
-            "images/projects/drukarka_3d_onykson/drukarka1.png",
-            "images/projects/drukarka_3d_onykson/drukarka2.png",
-            "images/projects/drukarka_3d_onykson/drukarka3.png",
-            "images/projects/drukarka_3d_onykson/drukarka4.png"
+            "/static/images/projects/drukarka_3d_onykson/drukarka1.png",
+            "/static/images/projects/drukarka_3d_onykson/drukarka2.png",
+            "/static/images/projects/drukarka_3d_onykson/drukarka3.png",
+            "/static/images/projects/drukarka_3d_onykson/drukarka4.png"
         ],
         "project2": [
-            "images/projects/monitoring_iot/iot1.png",
-            "images/projects/monitoring_iot/iot2.png",
-            "images/projects/monitoring_iot/iot3.png",
-            "images/projects/monitoring_iot/iot4.png"
+            "/static/images/projects/monitoring_iot/iot1.png",
+            "/static/images/projects/monitoring_iot/iot2.png",
+            "/static/images/projects/monitoring_iot/iot3.png",
+            "/static/images/projects/monitoring_iot/iot4.png"
         ],
         "project3": [
-            "images/projects/narzedzia_karbon/karbon1.png",
-            "images/projects/narzedzia_karbon/karbon2.png",
-            "images/projects/narzedzia_karbon/karbon3.png"
+            "/static/images/projects/narzedzia_karbon/karbon1.png",
+            "/static/images/projects/narzedzia_karbon/karbon2.png",
+            "/static/images/projects/narzedzia_karbon/karbon3.png"
         ]
     };
 
