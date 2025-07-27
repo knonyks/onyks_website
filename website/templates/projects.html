@@ -1,47 +1,55 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekty - KN ONYKS</title>
 
     <!-- Ładowanie stylów -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
-          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" 
-          crossorigin="anonymous">
-    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/png" />
 
     <!-- Ładowanie skryptów -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Nagłówek -->
     {% include 'header.html' %}
 
     <section class="projects">
-        {% for project in projects %}
-        <div class="project" data-movie="{{ project.id }}">
-            <img src="{% static project.image %}" alt="Zdjęcie projektu" />
-            <div class="overview">
-                <h3>{{ project.name }}</h3>
-                <p>{{ project.description }}</p>
-            </div>
+      {% for project in projects %}
+      <div class="project" data-movie="{{ project.id }}">
+        <img src="{% static project.image %}" alt="Zdjęcie projektu" />
+        <div class="overview">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
         </div>
-        {% endfor %}
-    
-        <!-- Nakładka galerii -->
-        <div id="galleryOverlay" class="gallery-overlay">
-            <span id="closeGallery" class="close-gallery">&times;</span>
-            <div id="galleryContent" class="gallery-content slider">
-                <!-- Obrazy galerii będą dodawane dynamicznie przez JavaScript -->
-            </div>
+      </div>
+      {% endfor %}
+
+      <!-- Nakładka galerii -->
+      <div id="galleryOverlay" class="gallery-overlay">
+        <span id="closeGallery" class="close-gallery">&times;</span>
+        <div id="galleryContent" class="gallery-content slider">
+          <!-- Obrazy galerii będą dodawane dynamicznie przez JavaScript -->
         </div>
+      </div>
     </section>
 
     <!-- Stopka -->
@@ -49,6 +57,5 @@
 
     <!-- Skrypty -->
     <script src="{% static 'js/projects.js' %}"></script>
-
-</body>
+  </body>
 </html>

@@ -1,53 +1,63 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dołącz do nas - KN ONYKS</title>
 
     <!-- Ładowanie stylów -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
-          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" 
-          crossorigin="anonymous">
-    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/png" />
 
     <!-- Ładowanie skryptów -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Nagłówek -->
     {% include 'header.html' %}
 
     <section class="join_us">
-        <h2>Dołącz do nas!</h2>
-        <p>
-            <b>Rekrutacja jest zawsze otwarta.</b> Wypełnij formularz i dołącz do naszej społeczności. Odezwiemy się w wolnej chwili (a w razie czego przypomnij się na przez FB).  
-        </p>
-        
-        <div class="form-container">
-            <iframe src="https://forms.gle/zbEb2xzthN7ZayYh8" width="100%" height="600" style="border:0;"></iframe>
-        </div>
+      <h2>Dołącz do nas!</h2>
+      <p>
+        <b>Rekrutacja jest zawsze otwarta.</b> Wypełnij formularz i dołącz do
+        naszej społeczności. Odezwiemy się w wolnej chwili (a w razie czego
+        przypomnij się na przez FB).
+      </p>
 
-        <h3>Jak wygląda rekrutacja?</h3>
-        <ul class="content">
-            <li>Umówimy się na spotkanie, gdzie pokażemy nasz warsztat</li>
-            <li>Wybierzesz zadanie związane z obecnymi projektami</li>
-            <li>Zostaniesz zapisany jako oficjalny członek koła</li>
-            <li>Uzyskasz dostęp do naszego kanału Discord</li>
-            <li>Aktywnie (w miarę możliwości) uczestniczysz przy swoim zadaniu</li>
-            <li>Na najbliższym zebraniu walnym otrzymasz wejściówkę do pokoju koła</li>
-            <li>Dalej sam(a) decydujesz</li>
-        </ul>
+      <div class="form-container">
+        <iframe
+          src="https://forms.gle/zbEb2xzthN7ZayYh8"
+          width="100%"
+          height="600"
+          style="border: 0"
+        ></iframe>
+      </div>
+
+      <h3>Jak wygląda rekrutacja?</h3>
+      <ul class="content">
+        <li>Umówimy się na spotkanie, gdzie pokażemy nasz warsztat</li>
+        <li>Wybierzesz zadanie związane z obecnymi projektami</li>
+        <li>Zostaniesz zapisany jako oficjalny członek koła</li>
+        <li>Uzyskasz dostęp do naszego kanału Discord</li>
+        <li>Aktywnie (w miarę możliwości) uczestniczysz przy swoim zadaniu</li>
+        <li>
+          Na najbliższym zebraniu walnym otrzymasz wejściówkę do pokoju koła
+        </li>
+        <li>Dalej sam(a) decydujesz</li>
+      </ul>
     </section>
 
     <!-- Stopka -->
     {% include 'footer.html' %}
 
     <!-- Skrypty -->
-    <script src="{% static 'js/script.js' %}"></script>
-
-</body>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
 </html>

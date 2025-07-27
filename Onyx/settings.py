@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-j3+i3m6^o+wgd68!q)3#kpbou_)*46(#loc&!&f4)nu*i(^b)7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 STATICFILES_DIRS = [
@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'website.urls'
+ROOT_URLCONF = 'Onyx.urls'
 
 TEMPLATES = [
     {
@@ -127,3 +127,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

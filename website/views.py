@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.core.mail import send_mail
+from django.contrib import messages
+
 
 def home(request):
     return render(request, "index.html")
@@ -104,7 +106,6 @@ def contact(request):
         email = request.POST.get("email")
         message = request.POST.get("message")
 
-        # Wysyłanie maila (konfiguracja w settings.py)
         send_mail(
             f"Nowa wiadomość od {name}",
             message,
@@ -112,7 +113,12 @@ def contact(request):
             ["kn.onyks@gmail.com"],
             fail_silently=False,
         )
-
         messages.success(request, "Twoja wiadomość została wysłana!")
-    
+
     return render(request, "contact.html")
+
+def live_status(request):
+    return render(request, "live_status.html")
+
+def join_us(request):
+    return render(request, "join_us.html")
