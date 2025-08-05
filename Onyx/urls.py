@@ -20,7 +20,7 @@ from django.shortcuts import redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('website/', include('website.urls')),
-    path('', lambda request: redirect('website/', permanent=False)),  # <--- DODANE
+    path('', include('website.urls')),
 ]
+
 
