@@ -39,7 +39,8 @@ def about(request):
             "position": "Sekretarz",
             "image": "images/profiles/szymon.png",
             "description": "Zwolennik porządku i dokładności, wytrawny elektronik i mikrofalowiec. Nadaje organizacji profesjonalizmu. Włada rejestrami mikrokontrolerów i potężną matematyką.
-              Fan elektorniki analogowej i mikrokontrolerów AVR (za Ar***no wyrzuca z koła)",
+  Fan elektorniki analogowej i mikrokontrolerów AVR (za Ar***no wyrzuca z koła)",
+
             "specialties": ["C", "AVR", "RF", "SolidEdge"],
             "facebook": "https://www.facebook.com/profile.php?id=100017236899585",
             "github": "https://github.com/xJacksee",
@@ -50,7 +51,8 @@ def about(request):
             "position": "Zastępca Skarbnik",
             "image": "images/profiles/janusz.png",
             "description": "Weteran WEiTI. Doskonały przewdonik dla nowych człownków.
-            Znawca tranzystorów mocy i strażnik lodówki. Specjalista od prania pieniędzy i biurokracji.",
+Znawca tranzystorów mocy i strażnik lodówki. Specjalista od prania pieniędzy i biurokracji.",
+
             "specialties": ["STM32", "Python"],
             "facebook": "https://www.facebook.com/profile.php?id=100009501830846",
             "github": "https://github.com/JohhnyLat",
@@ -60,8 +62,9 @@ def about(request):
             "name": "Bartosz Mruk",
             "position": "Skarbnik",
             "image": "images/profiles/bartosz.png",
-            "description": "Murarz, tynkarz, akrobata. Zawsze świadczy szybką pomocą przy kwestiach organizacyjnych. Doskonały dawca pomysłów na niekonwencjonalne rozwiązania techniczne. Zdał Metody Numeryczne za pierwszym razem.
-            Tak swoją drogą to używa Arch Linuxa.",
+"description": "Murarz, tynkarz, akrobata. Zawsze świadczy szybką pomocą przy kwestiach organizacyjnych. Doskonały dawca pomysłów na niekonwencjonalne rozwiązania techniczne. Zdał Metody Numeryczne za pierwszym razem.
+Tak swoją drogą to używa Arch Linuxa.",
+
             "specialties": ["(Arch) Linux", "Matematyka"],
             "facebook": "https://www.facebook.com/share/18LBgNztPQ/",
             "github": "https://github.com/BRM42795"
@@ -131,4 +134,5 @@ def live_status(request):
 def join_us(request):
 
     return render(request, "join_us.html")
+
 
