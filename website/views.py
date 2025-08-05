@@ -86,26 +86,27 @@ def projects(request):
             "id": "project1",
             "name": "Drukarka 3D ONYKSON",
             "image": "images/projects/drukarka_3d_onykson/drukarka1.png",
-            "description": "Bazując na projekcie open source drukarki Voron 2, projektujemy naszą własną konstrukcję, której motywem przewodnim jest niski koszt materiałów i łatwość obsługi.
-            Staramy się uzyskać dużą powierzchnię roboczą przy możliwie najmniejszej liczbie elementów, tak aby nasza drukarka była "surowym" szkieletem gotowym na bardziej
-            zaawansowane ulepszenia. Drukarka opiera się na systemie "Core XY""
+            "description": """Bazując na projekcie open source drukarki Voron 2, projektujemy naszą własną konstrukcję, której motywem przewodnim jest niski koszt materiałów i łatwość obsługi.
+Staramy się uzyskać dużą powierzchnię roboczą przy możliwie najmniejszej liczbie elementów, tak aby nasza drukarka była "surowym" szkieletem gotowym na bardziej
+zaawansowane ulepszenia. Drukarka opiera się na systemie "Core XY"."""
         },
         {
             "id": "project2",
             "name": "Monitoring pomieszczeń IoT",
             "image": "images/projects/monitoring_iot/iot1.png",
-            "description": "Projekt ONYKS IoT to praktyczna inicjatywa, która stawia na rozwijanie umiejętności z projektowania elektroniki i programowania systemów wbudowanych - od systemów monitoringu drzwi, aż po narzędzia do inwentaryzacji urządzeń. 
-          Każdy może spróbować swoich sił w projektowaniu sprzętu czy programowaniu. Pracujemy nad realnymi rozwiązaniami, które można zastosować np. w laboratoriach, salach zajęciowych czy innych Kołach."
+            "description": """Projekt ONYKS IoT to praktyczna inicjatywa, która stawia na rozwijanie umiejętności z projektowania elektroniki i programowania systemów wbudowanych - od systemów monitoringu drzwi, aż po narzędzia do inwentaryzacji urządzeń. 
+Każdy może spróbować swoich sił w projektowaniu sprzętu czy programowaniu. Pracujemy nad realnymi rozwiązaniami, które można zastosować np. w laboratoriach, salach zajęciowych czy innych Kołach."""
         },
         {
             "id": "project3",
             "name": "Narzędzia z włókna węglowego",
             "image": "images/projects/narzedzia_karbon/karbon1.png",
-            "description": "Stosując formy zaprojektowane przez nas w CAD 3D i wydrukowane na drukarkach 3D staramy się tworzyć własne narzędzia z włókna węglowego spojonego żywicą.
-            Planujemy produkować narzędzia takie jak pensety, które są często używane w warsztacie elektronika."
+            "description": """Stosując formy zaprojektowane przez nas w CAD 3D i wydrukowane na drukarkach 3D staramy się tworzyć własne narzędzia z włókna węglowego spojonego żywicą.
+Planujemy produkować narzędzia takie jak pensety, które są często używane w warsztacie elektronika."""
         }
     ]
     return render(request, "projects.html", {"projects": projects})
+
 
 def contact(request):
     if request.method == "POST":
@@ -130,3 +131,4 @@ def live_status(request):
 def join_us(request):
 
     return render(request, "join_us.html")
+
