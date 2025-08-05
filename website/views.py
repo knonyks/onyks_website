@@ -28,7 +28,7 @@ def about(request):
             "name": "Mateusz Turycz",
             "position": "Prezes",
             "image": "images/profiles/mateusz.png",
-            "description": "Jeden z odrodzicieli obecnej generacji koła. Człowiek orkiestra, wysłannik chaosu, wyznawca szybkich drukarek 3D i pilot dronów.",
+            "description": """Jeden z odrodzicieli obecnej generacji koła. Człowiek orkiestra, wysłannik chaosu, wyznawca szybkich drukarek 3D i pilot dronów.""",
             "specialties": ["Python", "CAD 3D", "Altium Designer", "Drony", "Drukarki 3D"],
             "facebook": "https://www.facebook.com/profile.php?id=100014090220701",
             "github": "https://github.com/TH3Mateo",
@@ -38,9 +38,8 @@ def about(request):
             "name": "Szymon Bartosik",
             "position": "Sekretarz",
             "image": "images/profiles/szymon.png",
-            "description": "Zwolennik porządku i dokładności, wytrawny elektronik i mikrofalowiec. Nadaje organizacji profesjonalizmu. Włada rejestrami mikrokontrolerów i potężną matematyką.
-  Fan elektorniki analogowej i mikrokontrolerów AVR (za Ar***no wyrzuca z koła)",
-
+            "description": """Zwolennik porządku i dokładności, wytrawny elektronik i mikrofalowiec. Nadaje organizacji profesjonalizmu. Włada rejestrami mikrokontrolerów i potężną matematyką.
+Fan elektroniki analogowej i mikrokontrolerów AVR (za Ar***no wyrzuca z koła).""",
             "specialties": ["C", "AVR", "RF", "SolidEdge"],
             "facebook": "https://www.facebook.com/profile.php?id=100017236899585",
             "github": "https://github.com/xJacksee",
@@ -50,9 +49,8 @@ def about(request):
             "name": "Janusz Stepanik",
             "position": "Zastępca Skarbnik",
             "image": "images/profiles/janusz.png",
-            "description": "Weteran WEiTI. Doskonały przewdonik dla nowych człownków.
-Znawca tranzystorów mocy i strażnik lodówki. Specjalista od prania pieniędzy i biurokracji.",
-
+            "description": """Weteran WEiTI. Doskonały przewodnik dla nowych członków.
+Znawca tranzystorów mocy i strażnik lodówki. Specjalista od prania pieniędzy i biurokracji.""",
             "specialties": ["STM32", "Python"],
             "facebook": "https://www.facebook.com/profile.php?id=100009501830846",
             "github": "https://github.com/JohhnyLat",
@@ -62,9 +60,8 @@ Znawca tranzystorów mocy i strażnik lodówki. Specjalista od prania pieniędzy
             "name": "Bartosz Mruk",
             "position": "Skarbnik",
             "image": "images/profiles/bartosz.png",
-"description": "Murarz, tynkarz, akrobata. Zawsze świadczy szybką pomocą przy kwestiach organizacyjnych. Doskonały dawca pomysłów na niekonwencjonalne rozwiązania techniczne. Zdał Metody Numeryczne za pierwszym razem.
-Tak swoją drogą to używa Arch Linuxa.",
-
+            "description": """Murarz, tynkarz, akrobata. Zawsze świadczy szybką pomocą przy kwestiach organizacyjnych. Doskonały dawca pomysłów na niekonwencjonalne rozwiązania techniczne. Zdał Metody Numeryczne za pierwszym razem.
+Tak swoją drogą to używa Arch Linuxa.""",
             "specialties": ["(Arch) Linux", "Matematyka"],
             "facebook": "https://www.facebook.com/share/18LBgNztPQ/",
             "github": "https://github.com/BRM42795"
@@ -73,13 +70,14 @@ Tak swoją drogą to używa Arch Linuxa.",
             "name": "Rafał Chojnacki",
             "position": "Administrator mediów",
             "image": "images/profiles/rafal.png",
-            "description": "Zawsze działa za kulisami i planuje przejąć władzę w tym kole. Programista Python i Web Dev. Zawodowo zajmuje się automatyką, a z powołania zgłębia tajniki historii. Zawsze wygra z Tobą w Geoguesser.",
+            "description": """Zawsze działa za kulisami i planuje przejąć władzę w tym kole. Programista Python i Web Dev. Zawodowo zajmuje się automatyką, a z powołania zgłębia tajniki historii. Zawsze wygra z Tobą w Geoguesser.""",
             "specialties": ["Python", "JavaScript", "WWW"],
             "github": "https://github.com/RafalCho02",
             "linkedin": "https://www.linkedin.com/in/rafa%C5%82-chojnacki-540441253/"
         }
     ]
     return render(request, "about.html", {"members": members})
+
 
 from django.shortcuts import render
 
@@ -134,5 +132,6 @@ def live_status(request):
 def join_us(request):
 
     return render(request, "join_us.html")
+
 
 
