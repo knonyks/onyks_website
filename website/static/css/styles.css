@@ -689,6 +689,7 @@ body {
 /* NA MAŁYCH EKRANACH UKRYJ MENU */
 .wut-info {
   margin-right: 50px;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 1575px) {
