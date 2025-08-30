@@ -158,12 +158,10 @@ def contact(request):
 
     return render(request, "contact.html")
 
-def live_status(request):
-    return render(request, "live_status.html")
-
 def join_us(request):
 
     return render(request, "join_us.html")
+
 
 
 
