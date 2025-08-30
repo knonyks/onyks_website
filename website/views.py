@@ -1,6 +1,12 @@
 from django.core.mail import send_mail
 from django.contrib import messages
-
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
+from django.core.cache import cache
+import json
+import os
+import time
 
 def home(request):
     return render(request, "index.html")
@@ -14,8 +20,34 @@ def projects(request):
 def contact(request):
     return render(request, "contact.html")
 
+@csrf_exempt
 def live_status(request):
-    return render(request, "live_status.html")
+    if request.method == "POST":
+        if len(request.body) > 100:
+            return HttpResponse(b"Body too long")
+        try:
+            data = json.loads(request.body)
+        except Exception:
+            data = {}
+
+        token = data.get("token")
+        status = data.get("status")
+        if token == "c26269c7-0f5d-4966-8cd5-b79acb86fb7a" and status in (
+            "closed",
+            "open",
+        ):
+            cache.set("door_status", status, None)
+            cache.set("door_time", time.time(), None)
+            return HttpResponse(b"ok")
+        else:
+            return HttpResponse(b"Invalid parameters")
+    else:
+        return render(request, "live_status.html", {
+            "door_status": cache.get("door_status", "closed"),
+            "door_time": cache.get("door_time", 0)
+            })
+
+
 
 def join_us(request):
     return render(request, "join_us.html")

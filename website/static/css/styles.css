@@ -936,14 +936,39 @@ body {
 .live {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 0px;
+}
+
+#live-wrapper {
+background-color: #161b22;
+border-radius: 25px;
+width: 60vw;
+padding: 50px 10vw 0 10vw;
+height: calc(100vh - 240px - 180px);
+min-height: 250px;
+min-width: 450px;
+margin: 50px 0 50px 0;
+}
+
+#door-open {
+color: #0ad100;
+font-weight: bold;
+text-align: center;
+}
+#door-closed {
+color: #ba1101;
+font-weight: bold;
+text-align: center;
+}
+
+#door-clock {
+text-align: end;
 }
 
 .live h1 {
-  font-size: 150px;
-  color: #eeeeee;
+  font-size: 80px; /* Możesz dostosować między 100px a 200px */
+  color: #EEEEEE; /* Kolor pasujący do reszty strony */
   font-weight: bold;
   margin: 0;
 }
