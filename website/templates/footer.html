@@ -1,0 +1,56 @@
+{% load static %}
+
+<footer class="footer">
+  <div class="container">
+
+  <p id="copyright"></p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const year = new Date().getFullYear();
+    document.getElementById("copyright").innerHTML =
+      `&copy; 2024 - ${year} Koło Naukowe Mikrosystemów - Politechnika Warszawska. Wszelkie prawa zastrzeżone.`;
+  });
+</script>
+
+
+    <p class="footer-item">
+      <i class="fab fa-github"></i> Autor strony:
+      <a href="https://github.com/RafalCho02" target="_blank" aria-label="GitHub">
+        Rafał Chojnacki
+      </a>
+    </p>
+        <p class="footer-item">
+      <i class="fab fa-github"></i> Wsparcie przy tworzeniu:
+      <a href="https://github.com/Stesyo" target="_blank" aria-label="GitHub">
+        Julian Stefan
+      </a>
+    </p>
+
+    <p class="footer-item">
+      <i class="fas fa-envelope"></i> E-mail:
+      <a href="mailto:kn.onyks@gmail.com">kn.onyks@gmail.com</a>
+    </p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/knonyks" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/knonyks/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/knonyks" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/knonyks/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Plik JavaScript dla Swipera -->
+<script src="{% static 'js/swiper.js' %}"></script>
+
+</body>
+</html>

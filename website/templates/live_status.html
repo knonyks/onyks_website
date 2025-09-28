@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Status - KN ONYKS</title>
+
+    <!-- Style (dokładnie jak chciałeś) -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/png" />
+
+    <!-- Ładowanie skryptów (jQuery w <head>, jak chciałeś) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    {% include 'header.html' %}
+
+    <section class="live">
+      {% if door_status == "opedn" %}
+      <div
+        id="live-wrapper"
+        class="live-box open"
+        role="status"
+        aria-live="polite"
+      >
+        <h2>Drzwi od siedziby koła są:</h2>
+        <div class="door-card">
+          <i class="fas fa-door-open door-icon" aria-hidden="true"></i>
+          <h1 id="door-open">Otwarte</h1>
+          <h3 id="door-clock" class="door-subtitle"></h3>
+        </div>
+      </div>
+      <script>
+        (function () {
+          const then = {{ door_time }};
+          function tick() {
+            const diffMin = Math.floor((Date.now()/1000 - then) / 60);
+            if (diffMin > 59) {
+              const h = Math.floor(diffMin/60);
+              const m = diffMin % 60;
+              document.getElementById('door-clock').textContent = `Od ${h} godzin i ${m} minut`;
+            } else {
+              document.getElementById('door-clock').textContent = `Od ${diffMin} minut`;
+            }
+          }
+          tick();
+          setInterval(tick, 10000);
+        })();
+      </script>
+
+      {% elif door_status == "closed" %}
+      <div
+        id="live-wrapper"
+        class="live-box closed"
+        role="status"
+        aria-live="polite"
+      >
+        <h2>Drzwi od siedziby koła są:</h2>
+        <div class="door-card">
+          <i class="fas fa-door-closed door-icon" aria-hidden="true"></i>
+          <h1 id="door-closed">Zamknięte</h1>
+          <h3 class="door-subtitle">Zapraszamy w godzinach otwarcia</h3>
+        </div>
+      </div>
+
+      {% else %}
+      <div
+        id="live-wrapper"
+        class="live-box error"
+        role="status"
+        aria-live="polite"
+      >
+        <h2>Drzwi od siedziby koła są:</h2>
+        <div class="door-card">
+          <i
+            class="fas fa-exclamation-triangle door-icon"
+            aria-hidden="true"
+          ></i>
+          <h1>Błąd</h1>
+          <h3 class="door-subtitle">Nie udało się pobrać statusu</h3>
+        </div>
+      </div>
+      {% endif %}
+    </section>
+
+    {% include 'footer.html' %}
+
+    <!-- Tylko ten skrypt ze statica -->
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

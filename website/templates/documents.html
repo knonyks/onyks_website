@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokumenty - KN ONYKS</title>
+
+    <!-- Ładowanie stylów -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/png" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    {% include 'header.html' %}
+
+    <section class="documents-section">
+      <div class="container">
+        <h2 class="section-title">Dokumenty do pobrania</h2>
+        <div class="documents-grid">
+          {% for document in documents %}
+          <div class="document-card">
+            <div class="doc-title">
+              <h3>{{ document.title }}</h3>
+            </div>
+            <div class="doc-description">
+              <p>{{ document.description }}</p>
+              <a
+                href="{{ document.drive_url }}"
+                target="_blank"
+                class="doc-link"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          {% empty %}
+          <p style="text-align: center">Brak dokumentów do wyświetlenia.</p>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    {% include 'footer.html' %}
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
