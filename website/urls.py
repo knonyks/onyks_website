@@ -11,4 +11,5 @@ urlpatterns = [
     path("contact/", contact, name="contact"),
     path("join-us/", join_us, name="join_us"),
     path("live-status/", live_status, name="live_status"),
+    path('admin/', admin.site.urls),
 ]
