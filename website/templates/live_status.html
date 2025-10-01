@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Status - KN ONYKS</title>
+
+    <!-- Ładowanie stylów -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous">
+    <link rel="icon" href="{% static 'images/ico.ico' %}" type="image/png">
+
+    <!-- Ładowanie skryptów -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <!-- Nagłówek -->
+    {% include 'header.html' %}
+
+    <section class="live">
+        <div id="live-wrapper">
+            <h2>Drzwi od siedziby koła są:</h3>
+            {% if door_status == "open" %}
+                <h1 id="door-open">Otwarte</h1>
+                <h3 id="door-clock"></h3>
+                <script>
+                    function clockUpdate() {
+                        const now = Date.now()/1000;
+                        const then = {{ door_time }};
+                        const diff = Math.floor(Math.floor(now - then) / 60);
+                        if(diff > 59) {
+                            const h = Math.floor(diff/60);
+                            const m = diff%60;
+                            document.getElementById('door-clock').textContent = `Od ${h} godzin i ${m} minut`;
+                        } else {
+                            document.getElementById('door-clock').textContent = `Od ${diff} minut`;
+                        }
+                    }
+                    clockUpdate()
+                    setInterval(clockUpdate, 10000)
+                </script>
+            {% elif door_status == "closed" %}
+                <h1 id="door-closed">Zamknięte</h1>
+            {% else %}
+                <h1>Błąd</h1>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    {% include 'footer.html' %}
+
+    <!-- Skrypty -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
